@@ -102,8 +102,6 @@ local function snapshot()
         level = me.Level(),
         zone = mq.TLO.Zone.ShortName(),
         hp = me.PctHPs(),
-        mana = (me.MaxMana() or 0) > 0 and me.PctMana() or nil,
-        endur = me.PctEndurance(),
         state = me.State(),
         combat = me.CombatState(),
         dead = me.Hovering() == true,
@@ -197,8 +195,6 @@ local function buildEmbed(name, entry, now)
     local fields = {
         { name = 'HP', value = bar(snap.hp), inline = true },
     }
-    if snap.mana then fields[#fields + 1] = { name = 'Mana', value = bar(snap.mana), inline = true } end
-    fields[#fields + 1] = { name = 'End', value = bar(snap.endur), inline = true }
     fields[#fields + 1] = {
         name = 'Target',
         value = ('%s (%d xtar)'):format(snap.target or 'none', snap.xtargets or 0),

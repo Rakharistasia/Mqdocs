@@ -11,7 +11,7 @@ Each box publishes a snapshot of itself over [actors](actors.md). One box, the *
 Each box gets its own embed showing:
 
 - name, level and class, zone, and combat state
-- HP, mana (casters only) and endurance bars
+- HP bar
 - current target and extended target count
 - RGMercs status: running, paused or off
 - XP and AA per hour over a rolling hour
