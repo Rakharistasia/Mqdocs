@@ -28,7 +28,7 @@ local DEFAULTS = {
     webhook_url = '',         -- Discord channel > Integrations > Webhooks > Copy Webhook URL
     mention = '',             -- optional Discord user ID to ping on alerts
     title = 'Box Status',
-    interval = 15,            -- seconds between card updates (hub only)
+    interval = 30,            -- seconds between card updates (hub only)
     stale_after = 45,         -- seconds without a snapshot before a box is reported silent
     low_hp = 30,              -- card turns yellow below this HP%
 }

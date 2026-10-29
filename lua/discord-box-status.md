@@ -40,7 +40,7 @@ Anyone with the webhook URL can post to that channel, so keep it private.
 | `webhook_url` | | Discord webhook URL (required) |
 | `mention` | | Discord user ID to ping on alerts. Turn on developer mode in Discord, then right-click your name and choose Copy User ID. |
 | `title` | `Box Status` | Heading shown above the cards |
-| `interval` | `15` | Seconds between card updates |
+| `interval` | `30` | Seconds between card updates |
 | `stale_after` | `45` | Seconds without a snapshot before a box is shown as silent |
 | `low_hp` | `30` | HP% below which a card turns yellow |
 
